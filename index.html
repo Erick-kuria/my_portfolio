@@ -18,7 +18,7 @@
         <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-black w3-large " href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
         <a href="#home" class="w3-bar-item w3-button w3-padding-large  w3-hover-black">PORTFOLIO</a>
         <div >
-          <a href="#about" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-black" >HOME</a>
+          <a href="#index.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-black" >HOME</a>
           <a href="#games" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-black">EXPERTISE </a>
           <a href="resume.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-black">RESUME</a>
           <a href="blog.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-black">ABOUT ME</a>
@@ -28,12 +28,12 @@
       </div>
       
       <!-- Navbar on small screens -->
-      <div id="navDemo" class="w3-bar-block  w3-hide w3-hide-large w3-hide-medium w3-large">
-        <a href="#about" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-black" >HOME</a>
-          <a href="#games" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-black">EXPERTISE </a>
-          <a href="resume.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-black">RESUME</a>
-          <a href="blog.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-black">ABOUT ME</a>
-          <a href="contact.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-black">CONTACT</a>
+       <div id="navDemo" class="w3-bar-block  w3-hide w3-hide-large w3-hide-medium w3-large">
+        <a href="index.html" class="w3-bar-item w3-button w3-padding-large"onclick="myFunction()">About</a>
+        <a href="#games" class="w3-bar-item w3-button w3-padding-large"onclick="myFunction()">EXPERTISE</a>
+        <a href="resume.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">RESUME</a>
+        <a href="blog.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">MY WORK</a>
+        <a href="contact.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CONTACTS</a>
       </div>
     </div>
     </div>
@@ -89,4 +89,15 @@
         <p> +254 758927979</p>
         <p>+1(843)843 3530</p>
       </div>
+        <script>
+    // Used to toggle the menu on small screens when clicking on the menu button
+    function myFunction() {
+      var x = document.getElementById("navDemo");
+      if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+      } else { 
+        x.className = x.className.replace(" w3-show", "");
+      }
+    }
+    </script>
     </body>
